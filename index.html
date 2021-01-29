@@ -19,23 +19,23 @@
       </fom>
       <div class="buttons">
        <!-- yellow -->
-       <button type="button" class="btn btn-yellow" data-num="*">*</button>
-       <button type="button" class="btn btn-yellow" data-num="/">/</button>
-       <button type="button" class="btn btn-yellow" data-num="-">-</button>
-       <button type="button" class="btn btn-yellow" data-num="+">+</button>
+       <button @click="divButton('*')"type="button" class="btn btn-yellow" data-num="*">*</button>
+       <button @click="divButton('/')" type="button" class="btn btn-yellow" data-num="/">/</button>
+       <button @click="reduceButton('-')" type="button" class="btn btn-yellow" data-num="-">-</button>
+       <button @click="plusButton('+')" type="button" class="btn btn-yellow" data-num="+">+</button>
        <!-- grey buttons -->
-       <button @click="addNumber('.')" type="button" class="btn btn-grey" data-num=".">.</button>
-       <button @click="addNumber('9')" type="button" class="btn btn-grey" data-num="9">9</button>
-       <button @click="addNumber('8')" type="button" class="btn btn-grey" data-num="8">8</button>
-       <button @click="addNumber('7')" type="button" class="btn btn-grey" data-num="7">7</button>
-       <button @click="addNumber('6')" type="button" class="btn btn-grey" data-num="6">6</button>
-       <button @click="addNumber('5')" type="button" class="btn btn-grey" data-num="5">5</button>
-       <button @click="addNumber('4')" type="button" class="btn btn-grey" data-num="4">4</button>
-       <button @click="addNumber('3')" type="button" class="btn btn-grey" data-num="3">3</button>
-       <button @click="addNumber('2')" type="button" class="btn btn-grey" data-num="2">2</button>
-       <button @click="addNumber('1')" type="button" class="btn btn-grey" data-num="1">1</button>
-       <button @click="addNumber('0')" type="button" class="btn btn-grey" data-num="0">0</button>
-       <button type="button" class="btn-equal btn-grey">=</button>
+       <button @click="numbersChoice('.')" type="button" class="btn btn-grey" data-num=".">.</button>
+       <button @click="numbersChoice('9')" type="button" class="btn btn-grey" data-num="9">9</button>
+       <button @click="numbersChoice('8')" type="button" class="btn btn-grey" data-num="8">8</button>
+       <button @click="numbersChoice('7')" type="button" class="btn btn-grey" data-num="7">7</button>
+       <button @click="numbersChoice('6')" type="button" class="btn btn-grey" data-num="6">6</button>
+       <button @click="numbersChoice('5')" type="button" class="btn btn-grey" data-num="5">5</button>
+       <button @click="numbersChoice('4')" type="button" class="btn btn-grey" data-num="4">4</button>
+       <button @click="numbersChoice('3')" type="button" class="btn btn-grey" data-num="3">3</button>
+       <button @click="numbersChoice('2')" type="button" class="btn btn-grey" data-num="2">2</button>
+       <button @click="numbersChoice('1')" type="button" class="btn btn-grey" data-num="1">1</button>
+       <button @click="numbersChoice('0')" type="button" class="btn btn-grey" data-num="0">0</button>
+       <button @click="equal" type="button" class="btn-equal btn-grey">=</button>
        <button @click="clearAll" type="button" class="btn-clear btn-grey">C</button>   
     
       </div>
