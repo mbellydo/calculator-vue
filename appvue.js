@@ -2,7 +2,11 @@ const app = Vue.createApp({
     data() {
         return {
             inputNumber: "",
+            show : false
         }
+    },
+    mounted() {
+        this.show = true
     },
     methods: {
         clearAll(){
@@ -26,8 +30,8 @@ const app = Vue.createApp({
             this.inputNumber = `${this.inputNumber}${n}`
         },          
         equal(){
-            this.inputNumber = eval(this.inputNumber)               
-        },
+            return this.inputNumber = eval(this.inputNumber)
+        }
     }
 })
 app.mount("#app") 

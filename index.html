@@ -15,7 +15,8 @@
     <div id ="app">        
      <section class="calculator">
       <form>
-          <input type="text" class="screen"> {{inputNumber}}
+          <div v-if="show">
+              <input v-model = "inputNumber" type="text" class="screen"> 
       </fom>
       <div class="buttons">
        <!-- yellow -->
