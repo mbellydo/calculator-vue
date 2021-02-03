@@ -14,20 +14,11 @@ const app = Vue.createApp({
         },
         // f() que ens concatenaran els valors dels numeros o els simbols clickats amb el que ja existeixi 
         // dins de  inputNumber (linea4)
-        numbersChoice(n){
-            this.inputNumber = `${this.inputNumber}${n}`
-        },
-        plusButton(n){
-            this.inputNumber = `${this.inputNumber}${n}`
-        },
-        reduceButton(n){
-            this.inputNumber = `${this.inputNumber}${n}`
-        },
-        multButton(n){
-            this.inputNumber = `${this.inputNumber}${n}`
-        },
-        divButton(n){
-            this.inputNumber = `${this.inputNumber}${n}`
+        divButton(event){
+            console.log(event.target.dataset.num)
+            // En la propiedad dataset tenemos todos los atributos mapeados en tag HTML con el formato data-*; como por ejemplo, data-num
+            let clickedButton = event.target.dataset.num
+            this.inputNumber = `${this.inputNumber}${clickedButton}`
         },          
         equal(){
             return this.inputNumber = eval(this.inputNumber)

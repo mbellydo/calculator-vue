@@ -1,6 +1,5 @@
 //Wrap code in an IIFE
 (function(){
-  
   let screen = document.querySelector('.screen');
   let buttons = document.querySelectorAll('.btn');
   let clear = document.querySelector('.btn-clear');
@@ -26,5 +25,4 @@
   clear.addEventListener('click', function(e){
     screen.value = '';
   })
- 
 })(); //end IIFE
